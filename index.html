@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Employee Profile</title>
+</head>
+<body>
+    <h1>Add New Employee</h1>
+    <form id="employeeForm">
+        <label for="name">Employee Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="marital_status">Marital Status</label>
+        <select id="marital_status" name="marital_status" required>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+        </select>
+
+        <label for="phone">Phone No.</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="nationality">Nationality</label>
+        <input type="text" id="nationality" name="nationality" required>
+
+        <label for="hire_date">Hire Date</label>
+        <input type="date" id="hire_date" name="hire_date" required>
+
+        <label for="department">Department</label>
+        <input type="text" id="department" name="department" required>
+
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <h2>Employee List</h2>
+    <div id="employeeList"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
